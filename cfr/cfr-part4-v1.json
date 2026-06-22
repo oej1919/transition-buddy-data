@@ -1,0 +1,491 @@
+{
+  "datasetVersion": "v1",
+  "cfrTitle": 38,
+  "cfrPart": 4,
+  "schemaSource": "https://www.ecfr.gov/current/title-38/chapter-I/part-4",
+  "bodySystems": [
+    {
+      "id": "musculoskeletal",
+      "name": "Musculoskeletal System",
+      "cfrRange": "§4.40–§4.73",
+      "conditions": [
+        {
+          "id": "lumbosacral-spine",
+          "commonName": "Lower back / lumbar spine conditions",
+          "vaName": "Spine — General Rating Formula for Diseases and Injuries of the Spine",
+          "bodySystem": "musculoskeletal",
+          "diagnosticCodes": [
+            "5235-5243"
+          ],
+          "cfrSection": "§4.71a",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "Spine conditions (degenerative disc disease, strain, etc.) are rated primarily on range-of-motion measurements (forward flexion) and whether ankylosis (fusion/immobility) is present, with separate consideration for incapacitating episodes if the condition involves intervertebral disc disease.",
+          "ratingTiers": [
+            {
+              "percent": 10,
+              "criteria": "Forward flexion of the thoracolumbar spine greater than 60° but not greater than 85°, or combined range of motion greater than 120° but not greater than 235°"
+            },
+            {
+              "percent": 20,
+              "criteria": "Forward flexion greater than 30° but not greater than 60°, or muscle spasm/guarding severe enough to result in abnormal gait or spinal contour"
+            },
+            {
+              "percent": 40,
+              "criteria": "Forward flexion of 30° or less, or favorable ankylosis of the entire thoracolumbar spine"
+            },
+            {
+              "percent": 50,
+              "criteria": "Unfavorable ankylosis of the entire thoracolumbar spine"
+            },
+            {
+              "percent": 100,
+              "criteria": "Unfavorable ankylosis of the entire spine"
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFR3e3a4d3e3e3a4/section-4.71a"
+        },
+        {
+          "id": "knee",
+          "commonName": "Knee conditions",
+          "vaName": "Knee — Limitation of Motion / Instability",
+          "bodySystem": "musculoskeletal",
+          "diagnosticCodes": [
+            "5256-5263"
+          ],
+          "cfrSection": "§4.71a",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "Knee conditions are rated based on range of motion (flexion/extension), instability, or other specific impairments like ankylosis or removal of cartilage — different diagnostic codes apply depending on which specific impairment is present.",
+          "ratingTiers": [
+            {
+              "percent": 10,
+              "criteria": "Slight limitation of motion or slight instability"
+            },
+            {
+              "percent": 20,
+              "criteria": "Moderate limitation of motion or moderate instability"
+            },
+            {
+              "percent": 30,
+              "criteria": "Severe limitation of motion, severe instability, or ankylosis (this and higher tiers vary by which specific diagnostic code applies)"
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFR3e3a4d3e3e3a4/section-4.71a"
+        }
+      ]
+    },
+    {
+      "id": "eye",
+      "name": "Eye (Organs of Special Sense)",
+      "cfrRange": "§4.75–§4.84",
+      "conditions": []
+    },
+    {
+      "id": "ear",
+      "name": "Ear & Other Sense Organs",
+      "cfrRange": "§4.85–§4.87a",
+      "conditions": [
+        {
+          "id": "tinnitus",
+          "commonName": "Tinnitus",
+          "vaName": "Tinnitus, Recurrent",
+          "bodySystem": "ear",
+          "diagnosticCodes": [
+            "6260"
+          ],
+          "cfrSection": "§4.87",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "Tinnitus (ringing in the ears) is rated as a single condition regardless of whether it affects one or both ears.",
+          "ratingTiers": [
+            {
+              "percent": 10,
+              "criteria": "Recurrent tinnitus (this is the maximum schedular rating for tinnitus alone)"
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFRddb5c0e3e3a4d3e/section-4.87"
+        },
+        {
+          "id": "hearing-loss",
+          "commonName": "Hearing loss",
+          "vaName": "Impairment of Auditory Acuity",
+          "bodySystem": "ear",
+          "diagnosticCodes": [
+            "6100"
+          ],
+          "cfrSection": "§4.85, §4.86",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "Hearing loss is rated using a table that combines results from a controlled speech discrimination test and a pure tone audiometry test for each ear, producing a Roman numeral (I-XI) for each ear, which is then cross-referenced on a rating table.",
+          "ratingTiers": [
+            {
+              "percent": 0,
+              "criteria": "Hearing within normal limits or mild loss not meeting threshold criteria"
+            },
+            {
+              "percent": 10,
+              "criteria": "Determined by cross-referencing both ears' test results (Table VI/VII) — not a simple percentage of hearing lost. 10%-100% tiers all use this same cross-reference method."
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFRddb5c0e3e3a4d3e/section-4.85"
+        }
+      ]
+    },
+    {
+      "id": "respiratory",
+      "name": "Respiratory System",
+      "cfrRange": "§4.96–§4.97",
+      "conditions": [
+        {
+          "id": "sleep-apnea",
+          "commonName": "Sleep apnea",
+          "vaName": "Sleep Apnea Syndromes (Obstructive, Central, Mixed)",
+          "bodySystem": "respiratory",
+          "diagnosticCodes": [
+            "6847"
+          ],
+          "cfrSection": "§4.97",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "Sleep apnea is rated primarily based on the treatment required — whether a CPAP or similar breathing assistance device is medically required is the key factor at the 50% level.",
+          "ratingTiers": [
+            {
+              "percent": 0,
+              "criteria": "Asymptomatic but with documented sleep disorder breathing"
+            },
+            {
+              "percent": 30,
+              "criteria": "Persistent daytime hypersomnolence"
+            },
+            {
+              "percent": 50,
+              "criteria": "Requires use of a breathing assistance device such as CPAP"
+            },
+            {
+              "percent": 100,
+              "criteria": "Chronic respiratory failure with carbon dioxide retention or cor pulmonale, or requires tracheostomy"
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFR8c1b3c1d3d3e3a5/section-4.97"
+        }
+      ]
+    },
+    {
+      "id": "cardiovascular",
+      "name": "Cardiovascular System",
+      "cfrRange": "§4.100–§4.104",
+      "conditions": [
+        {
+          "id": "hypertension",
+          "commonName": "Hypertension / high blood pressure",
+          "vaName": "Hypertensive Vascular Disease (Hypertension and Isolated Systolic Hypertension)",
+          "bodySystem": "cardiovascular",
+          "diagnosticCodes": [
+            "7101"
+          ],
+          "cfrSection": "§4.104",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "unverified",
+          "lastVerified": null,
+          "summary": "",
+          "ratingTiers": [],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/section-4.104",
+          "todo": "Populate ratingTiers from eCFR.gov — verify DC 7101 tier language (currently believed to be 10/20/40/60%, diastolic/systolic thresholds) against the current regulation text before marking verified."
+        }
+      ]
+    },
+    {
+      "id": "digestive",
+      "name": "Digestive System",
+      "cfrRange": "§4.110–§4.114",
+      "conditions": [
+        {
+          "id": "gerd",
+          "commonName": "GERD / acid reflux",
+          "vaName": "Hiatal Hernia",
+          "bodySystem": "digestive",
+          "diagnosticCodes": [
+            "7346"
+          ],
+          "cfrSection": "§4.114",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "GERD and similar conditions are rated based on the severity and frequency of symptoms like pain, regurgitation, dysphagia (difficulty swallowing), and their effect on health and weight.",
+          "ratingTiers": [
+            {
+              "percent": 10,
+              "criteria": "Two or more symptoms for the 30% rating but of lesser severity"
+            },
+            {
+              "percent": 30,
+              "criteria": "Persistently recurrent epigastric distress with dysphagia, pyrosis, and regurgitation, accompanied by substernal or arm/shoulder pain, productive of considerable impairment of health"
+            },
+            {
+              "percent": 60,
+              "criteria": "Symptoms of pain, vomiting, material weight loss, and hematemesis or melena with moderate anemia, or other symptom combinations productive of severe impairment of health"
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFR3e3a4d3e3e3a5/section-4.114"
+        }
+      ]
+    },
+    {
+      "id": "genitourinary",
+      "name": "Genitourinary System",
+      "cfrRange": "§4.115–§4.115b",
+      "conditions": []
+    },
+    {
+      "id": "gynecological",
+      "name": "Gynecological Conditions & Disorders of the Breast",
+      "cfrRange": "§4.116",
+      "conditions": []
+    },
+    {
+      "id": "hemic_lymphatic",
+      "name": "Hemic & Lymphatic Systems",
+      "cfrRange": "§4.117",
+      "conditions": []
+    },
+    {
+      "id": "skin",
+      "name": "Skin",
+      "cfrRange": "§4.118",
+      "conditions": [
+        {
+          "id": "scars",
+          "commonName": "Scars",
+          "vaName": "Scars — Burns, Disfigurement & Other",
+          "bodySystem": "skin",
+          "diagnosticCodes": [
+            "7800-7805"
+          ],
+          "cfrSection": "§4.118",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "Scars are rated based on location (head/face/neck vs. elsewhere), size (area in square inches/cm), and whether they are painful, unstable, or cause limitation of motion.",
+          "ratingTiers": [
+            {
+              "percent": 0,
+              "criteria": "Scar(s) that are not painful or unstable and do not limit motion, below the size threshold"
+            },
+            {
+              "percent": 10,
+              "criteria": "One or two scars that are painful or unstable, or scars meeting minimum size thresholds"
+            },
+            {
+              "percent": 20,
+              "criteria": "Multiple scars meeting size/severity thresholds, or scars causing limitation of motion rated under the affected body part (this and the 30%+ tier vary by exact diagnostic code)"
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFR3e3a4d3e3e3a6/section-4.118"
+        }
+      ]
+    },
+    {
+      "id": "endocrine",
+      "name": "Endocrine System",
+      "cfrRange": "§4.119",
+      "conditions": [
+        {
+          "id": "diabetes",
+          "commonName": "Diabetes mellitus",
+          "vaName": "Diabetes Mellitus",
+          "bodySystem": "endocrine",
+          "diagnosticCodes": [
+            "7913"
+          ],
+          "cfrSection": "§4.119",
+          "ratingMethod": "standard",
+          "pactAct": true,
+          "status": "unverified",
+          "lastVerified": null,
+          "summary": "",
+          "ratingTiers": [],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/section-4.119",
+          "todo": "Populate ratingTiers from eCFR.gov — verify DC 7913 tier language (currently believed to be 10/20/40/60/100%, based on insulin/diet/activity-restriction criteria) against current regulation text before marking verified. Type 2 diabetes is a long-standing Agent Orange presumptive, reaffirmed/expanded under PACT Act — double-check current presumptive exposure criteria, not just the rating tiers, since those rules move faster than the base schedule."
+        }
+      ]
+    },
+    {
+      "id": "neurological",
+      "name": "Neurological Conditions & Convulsive Disorders",
+      "cfrRange": "§4.120–§4.124a",
+      "conditions": [
+        {
+          "id": "migraine",
+          "commonName": "Migraine headaches",
+          "vaName": "Migraine",
+          "bodySystem": "neurological",
+          "diagnosticCodes": [
+            "8100"
+          ],
+          "cfrSection": "§4.124a",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "Migraines are rated based on the frequency and severity of \"prostrating attacks\" — attacks severe enough that the person must stop activity and seek a dark, quiet place.",
+          "ratingTiers": [
+            {
+              "percent": 0,
+              "criteria": "Less frequent attacks"
+            },
+            {
+              "percent": 10,
+              "criteria": "Characteristic prostrating attacks averaging one in 2 months over the last several months"
+            },
+            {
+              "percent": 30,
+              "criteria": "Characteristic prostrating attacks occurring on average once a month over the last several months"
+            },
+            {
+              "percent": 50,
+              "criteria": "Very frequent completely prostrating and prolonged attacks productive of severe economic inadaptability"
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFRddb5c0e3e3a4d3f/section-4.124a"
+        },
+        {
+          "id": "radiculopathy",
+          "commonName": "Radiculopathy / peripheral nerve conditions",
+          "vaName": "Paralysis of Peripheral Nerves (Incomplete/Complete)",
+          "bodySystem": "neurological",
+          "diagnosticCodes": [
+            "8510-8730"
+          ],
+          "cfrSection": "§4.124a",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "Nerve conditions (often associated with spine conditions, causing pain/numbness/weakness radiating into an arm or leg) are rated based on whether the nerve impairment is \"mild,\" \"moderate,\" \"moderately severe,\" or \"severe,\" and whether it is \"incomplete\" or \"complete\" paralysis — and which specific nerve is affected.",
+          "ratingTiers": [
+            {
+              "percent": 10,
+              "criteria": "Mild incomplete paralysis of the affected nerve"
+            },
+            {
+              "percent": 20,
+              "criteria": "Moderate incomplete paralysis"
+            },
+            {
+              "percent": 30,
+              "criteria": "Moderately severe to severe incomplete paralysis (exact % depends on which nerve and which limb)"
+            },
+            {
+              "percent": 40,
+              "criteria": "Complete paralysis of the nerve — exact % depends on which specific nerve and limb is affected, can be higher than 40% for some nerves"
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFRddb5c0e3e3a4d3f/section-4.124a"
+        },
+        {
+          "id": "tbi",
+          "commonName": "Traumatic Brain Injury (TBI)",
+          "vaName": "Residuals of Traumatic Brain Injury",
+          "bodySystem": "neurological",
+          "diagnosticCodes": [
+            "8045"
+          ],
+          "cfrSection": "§4.124a",
+          "ratingMethod": "faceted",
+          "pactAct": false,
+          "status": "unverified",
+          "lastVerified": null,
+          "summary": "",
+          "ratingTiers": [],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/section-4.124a",
+          "todo": "Populate facets from eCFR.gov — DC 8045 scores 10 facets of function (memory/concentration, judgment, social interaction, motor activity, visual-spatial, subjective symptoms, neurobehavioral, communication, consciousness, plus a glasgow coma scale facet), each at level 0-3 or \"total\", with the highest facet score across all of them determining the overall rating. ratingTiers intentionally stays [] per ratingMethod: \"faceted\" — do not populate it for this condition."
+        }
+      ]
+    },
+    {
+      "id": "mental_disorders",
+      "name": "Mental Disorders",
+      "cfrRange": "§4.130",
+      "conditions": [
+        {
+          "id": "ptsd",
+          "commonName": "PTSD & related mental health conditions",
+          "vaName": "Mental Disorders — General Rating Formula",
+          "bodySystem": "mental_disorders",
+          "diagnosticCodes": [
+            "9411",
+            "9201-9521"
+          ],
+          "cfrSection": "§4.130",
+          "ratingMethod": "standard",
+          "pactAct": false,
+          "status": "verified",
+          "lastVerified": "2024-08-01",
+          "summary": "Mental disorders are rated under a \"General Rating Formula\" based on the degree of occupational and social impairment caused by symptoms — not by diagnosis name alone. The same formula applies to PTSD, depression, anxiety, and most other mental health conditions.",
+          "ratingTiers": [
+            {
+              "percent": 0,
+              "criteria": "Diagnosis present, symptoms not severe enough to interfere with work or social function, or symptoms controlled by medication"
+            },
+            {
+              "percent": 30,
+              "criteria": "Occasional decrease in work efficiency, intermittent periods of inability to perform tasks (though generally functioning satisfactorily)"
+            },
+            {
+              "percent": 50,
+              "criteria": "Reduced reliability and productivity due to symptoms"
+            },
+            {
+              "percent": 70,
+              "criteria": "Deficiencies in most areas (work, school, family relations, judgment, thinking, mood)"
+            },
+            {
+              "percent": 100,
+              "criteria": "Total occupational and social impairment"
+            }
+          ],
+          "facets": [],
+          "ecfrUrl": "ecfr.gov/current/title-38/chapter-I/part-4/subpart-B/subject-group-ECFR8c1b3c1d3d3e3a4/section-4.130"
+        }
+      ]
+    },
+    {
+      "id": "dental_oral",
+      "name": "Dental & Oral Conditions",
+      "cfrRange": "§4.150",
+      "conditions": []
+    },
+    {
+      "id": "infectious_immune_nutritional",
+      "name": "Infectious Diseases, Immune Disorders & Nutritional Deficiencies",
+      "cfrRange": "§4.88a–§4.88b",
+      "conditions": []
+    }
+  ]
+}
