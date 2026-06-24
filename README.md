@@ -6,7 +6,7 @@ annually; `cfr/` updates irregularly (see below).
 ## Structure
 - `pay-tables/` — Military basic pay by grade and YOS (DFAS)
 - `va-rates/` — VA disability compensation rates (VA.gov)
-- `bah/` — Basic Allowance for Housing rates (DTMO) — embedded in app
+- `bah/` — Basic Allowance for Housing rates (DTMO)
 - `cfr/` — 38 CFR Part 4, Schedule for Rating Disabilities (eCFR.gov) — see `cfr/SCHEMA.md`
 
 ## Update Schedule
